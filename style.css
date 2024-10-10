@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* colors */
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-olue: hsl(212, 86%, 64%);
+
+  --clr-dark-blue: hsl(234, 12%, 34%);
+  --clr-grayish-blue: hsl(229, 6%, 66%);
+  --clr-light-gray: hsl(0, 0%, 98%);
+
+  /* typography */
+  --ff-primary: "Poppins", sans-serif;
+
+  /* font weights */
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+
+  --fs-15: 0.9375rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fafafa;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-200);
+  color: var(--clr-dark-blue);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-weight: var(--fw-200);
+}
+
+h1 span {
+  display: block;
+  font-weight: var(--fw-600);
+  padding-bottom: 0.75rem;
+}
+
+p {
+  font-size: var(--fs-15);
+  color: var(--clr-grayish-blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: min-content;
+}
+
+.container > * {
+  flex: 1;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+
+.card {
+  padding: 1rem 2rem 2rem 2rem;
+  width: 380px;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(4, 39, 105, 0.1);
+}
+
+.card img {
+  padding-top: 2rem;
+  margin-left: auto;
+  padding-bottom: 1rem;
+  width: 20%;
+}
+
+h2 {
+  font-weight: var(--fw-600);
+  font-size: 1.25rem;
+}
+
+.red_border {
+  border-top: 4px solid var(--clr-red);
+}
+
+.cyan_border {
+  border-top: 4px solid var(--clr-cyan);
+}
+
+.orange_border {
+  border-top: 4px solid var(--clr-orange);
+}
+
+.blue_border {
+  border-top: 4px solid var(--clr-olue);
+}
